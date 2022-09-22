@@ -1,0 +1,303 @@
+body {
+  font-size: 14px;
+}
+
+.bg-box {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/coinworld-co.appspot.com/o/bkg.png?alt=media&token=e0f6c5b0-461b-4df8-9cf5-2468eafdd91c");
+  background-size: 110%;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.ao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-animate {
+  animation-name: parpadeo;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 0.7;
+    transform: scale3d(1, 1, 1);
+  }
+  20% {
+    opacity: 0.4;
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(1.08, 1.08, 1.08);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.mega-box {
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
+.ti-h1 {
+  font-weight: bold;
+  font-family: Gotham, sans-serif;
+  font-size: 75px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #2b9b5d;
+}
+
+.ti-h2 {
+  margin-top: 20px;
+  font-family: Gotham, sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.ti-h3 {
+  margin-top: 70px;
+  font-family: Gotham, sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.margen {
+ margin-top: 70px; margin-bottom: 1px;
+}
+
+
+/*NONES*/
+
+.none-xl {
+  display: block;
+}
+.none-xs {
+  display: none;
+}
+
+.img-logo {
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+@media screen and (max-width: 1330px) and (min-width: 960px) {
+  .img-logo {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .mega-box {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  .ti-h1 {
+    font-size: 35px;
+  }
+
+  .ti-h2 {
+    font-size: 18px;
+  }
+
+  .ti-h3 {
+    font-size: 18px;
+  }
+
+  .margen {
+    margin-top: 20px; margin-bottom: 1px;
+   }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .img-logo {
+    width: 100%;
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  /*NONES*/
+  .none-xl {
+    display: none;
+  }
+  .none-xs {
+    display: block;
+  }
+
+  .img-logo {
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .mega-box {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  .ti-h1 {
+    font-size: 35px;
+  }
+
+  .ti-h2 {
+    font-size: 18px;
+  }
+
+  .ti-h3 {
+    font-size: 18px;
+  }
+
+  .margen {
+    margin-top: 20px; margin-bottom: 1px;
+   }
+}
+
+.arrow-an {
+  animation-name: downs;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes downs {
+  0% {
+    opacity: 1;
+    transform: translate(0, 10px);
+  }
+  20% {
+    opacity: 0.6;
+    transform: translate(0, -20px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(0, 10px);
+  }
+  70% {
+    opacity: 0.6;
+    transform: translate(0, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 10px);
+  }
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("https://assets.website-files.com/611153e7af981472d8da199c/618d12179e08334c55bee117_Gotham-Medium_Web.woff")
+      format("woff"),
+    url("https://assets.website-files.com/611153e7af981472d8da199c/618d12179e08334c55bee117_Gotham-Medium_Web.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham book";
+  src: url("https://assets.website-files.com/611153e7af981472d8da199c/618d13b9edde405c59e4bb52_Gotham-Book_Web.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("https://assets.website-files.com/611153e7af981472d8da199c/618d14182d50f51bead24130_Gotham-Black_Web.woff")
+      format("woff"),
+    url("https://assets.website-files.com/611153e7af981472d8da199c/61279586c65ee060197ee946_Gotham-Black.otf")
+      format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("https://assets.website-files.com/611153e7af981472d8da199c/618d1418edde400d84e4bc68_Gotham-Bold_Web.woff")
+      format("woff"),
+    url("https://assets.website-files.com/611153e7af981472d8da199c/61279587b5f12a4ada6104ca_Gotham-Bold.otf")
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("https://assets.website-files.com/611153e7af981472d8da199c/618d1418e59ca100336201e9_Gotham-Light_Web.woff")
+      format("woff"),
+    url("https://assets.website-files.com/611153e7af981472d8da199c/612795874b798960f30c2f72_Gotham-XLight.otf")
+      format("opentype"),
+    url("https://assets.website-files.com/611153e7af981472d8da199c/61279587dcddd33326f94ef3_Gotham-Light.otf")
+      format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("https://assets.website-files.com/611153e7af981472d8da199c/618d141864e72c3b43c9f3e7_Gotham-Thin_Web.woff")
+      format("woff"),
+    url("https://assets.website-files.com/611153e7af981472d8da199c/61279587d9dd6688ff38050b_Gotham-Thin.otf")
+      format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham ultra";
+  src: url("https://assets.website-files.com/611153e7af981472d8da199c/618d141802f58c85462e377d_Gotham-Ultra_Web.woff")
+      format("woff"),
+    url("https://assets.website-files.com/611153e7af981472d8da199c/6127958a0f45965e661b97fa_Gotham-Ultra.otf")
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
